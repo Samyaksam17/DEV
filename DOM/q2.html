@@ -23,10 +23,24 @@
     // 3 steps 
     // 1: get all list element
     // 2: create li element
-    // 3: insert after 6th li element
+    // 3: insert before 6th li element
 
     // 1: get all list element
-    let liElement
+    let unorderedList = document.querySelector("ul");
+    let liElement = document.querySelectorAll("li");
+    console.log(liElement);
+
+     // 2: create li element
+    let seventhElem = document.createElement("li");
+    seventhElem.innerText='7';
+     // 3: insert before 8th li element
+     let insertedelement = liElement[6];
+                            // What to insert , before whic ele to be insert
+    unorderedList.insertBefore(seventhElem,insertedelement);
+    console.log(liElement);
+     // insert a node before reference node as a child of  specified parent node
+
+
 
 </script>
 </body>
